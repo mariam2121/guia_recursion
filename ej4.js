@@ -1,13 +1,11 @@
-let cadena = "hola";
-
-
-function ordenarCadena(cadena) {
-
-    if (cadena.length <= + 1) {
-      return cadena;
-    } else {
-    return cadena.charAt(cadena.length - 1) + ordenarCadena(cadena.substring(0, cadena.length - 1)) ;
+let contenedor = ""; 
+function revercecadena(cadena){
+    //caso base
+    if(cadena.length <= 1){
+        return cadena;
     }
-  }
-  let cadenaInvertida = ordenarCadena(cadena);
-  console.log(cadenaInvertida);
+     if( contenedor = revercecadena(cadena.slice(1) )){
+         return contenedor + cadena[0]
+     }
+}
+console.log(revercecadena("hector"));
